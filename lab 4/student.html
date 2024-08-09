@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+</head>
+<body>
+    <script>
+        let sstudent=[
+            {
+                Name:'Hemali Tank',
+                Age:18,
+                Course:"B.tech from DU",
+                Class:"A",
+                School:"Sarswati",
+                Rollno:212
+            },
+            {
+                Name:'Yasha Ramai',
+                Age:17,
+                Course:"B.tech from DU",
+                Class:"A",
+                School:"Gandhi",
+                Rollno:169
+            },
+            {
+                Name:'Disha Dafda',
+                Age:18,
+                Course:"B.tech from DU",
+                Class:"A",
+                School:"Gandhi",
+                Rollno:122
+            },
+            {
+                Name:'Devanshi Chhatrala',
+                Age:19,
+                Course:"B.tech from DU",
+                Class:"A",
+                School:"Modi",
+                Rollno:180
+            }
+        ]
+        document.write("<table border=1>");
+            document.write("<th>"+'Name'+"</th>")
+                document.write("<th>"+'Age'+"</th>")
+                document.write("<th>"+'Course'+"</th>")
+                document.write("<th>"+'Class'+"</th>")
+                document.write("<th>"+'School'+"</th>")
+                document.write("<th>"+'Rollno'+"</th>")
+            for(let i=0;i<student.length;i++){
+                document.write("<tr>");
+                document.write("<td>"+student[i].Name+"</td>");
+                document.write("<td>"+student[i].Age+"</td>");
+                document.write("<td>"+student[i].Course+"</td>");
+                document.write("<td>"+student[i].Class+"</td>");
+                document.write("<td>"+student[i].School+"</td>");
+                document.write("<td>"+student[i].Rollno+"</td>");
+                document.write("</tr>");
+            }
+        document.write("</table>")
+    </script>
+</body>
+</html>

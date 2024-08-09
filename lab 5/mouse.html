@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="main">click</button><br>
+</body>
+<script>
+    document.getElementById("main").addEventListener("click",()=>{
+    console.log("click")
+    })
+    document.getElementById("main").addEventListener("dblclick",()=>{
+    console.log("dblclick")
+    })
+    document.getElementById("main").addEventListener("mousedown",()=>{
+    console.log("mousedown")
+    })
+    document.getElementById("main").addEventListener("mouseover",()=>{
+    console.log("mouseover")
+    })
+    document.getElementById("main").addEventListener("mouseout",()=>{
+    console.log("mouseout")
+    })
+    document.getElementById("main").addEventListener("mousemove",()=>{
+    console.log("mousemove")
+    })
+    document.getElementById("main").addEventListener("dblclick",()=>{
+    console.log("mouseup")
+    })
+</script>
+</html>
