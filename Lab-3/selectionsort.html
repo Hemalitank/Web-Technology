@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection sort</title>
+</head>
+<body>
+    <script>
+        let a=new Array();
+        size=parseInt(prompt("enter a size of array"));
+            for(let i=0;i<size;i++){
+                a[i]=parseInt(prompt("Enter a element"));
+            }
+                for(i=0;i<size;i++){
+                    temp=0;
+                    for(let j=i+1;j<size;j++){
+                        if(a[i]>a[j]){
+                            temp=a[i];
+                            a[i]=a[j];
+                            a[j]=temp;
+                        }
+                    }
+                }
+                document.write(a)
+    </script>
+</body>
+</html>

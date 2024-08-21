@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buble sort</title>
+</head>
+<body>
+    <script>
+        let a=new Array();
+        size=parseInt(prompt("Enter a size of array"));
+            for(let i=0;i<size;i++){
+                a[i]=parseInt(prompt("Ener a element"));
+            }
+            temp=0;
+                for(i=0;i<size;i++){
+                    for(let j=0;j<size;j++){
+                        if(a[j]>a[j+1]){
+                            temp=a[j+1];
+                            a[j+1]=a[j];
+                            a[j]=temp
+                        }
+                    }
+                }
+                document.write(a)
+    </script>
+    
+</body>
+</html>

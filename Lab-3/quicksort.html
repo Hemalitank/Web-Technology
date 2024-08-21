@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick sort</title>
+</head>
+<body>
+    <script>
+        let a=new Array();
+        size=parseInt(prompt("Enter a size of array"));
+            for(let i=0;i<size;i++){
+                a[i]=parseInt(prompt("Enter a element"));
+            }
+            function p(a,start,end){
+                let piovt=a[end];
+                let i=(start-1);
+                temp=0;
+                    for(let j=start;j<=end-1;j++){
+
+                        if(a[j]<piovt){
+                            i++;
+                            temp=a[i];
+                            a[i]=a[j];
+                            a[j]=a[i]
+                        }
+                    }
+            }
+    </script>
+</body>
+</html>
